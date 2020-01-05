@@ -1,6 +1,6 @@
 
 let rule=30;
-let w=501;
+let w=1921;
 let h=((w-3)/2);
 let kk=1;
 let windth=w*kk;
@@ -9,27 +9,47 @@ let heigth=h*kk;
 
 let i;
 let j;
-
+let sa=true;
 let A=new Array(h);
 let B=new Array(h);
+let ddd;
+let ccc=0;
 
 function aaa(){
+
   rule=this.value();
+  if(ccc.value!=(this.value)){
+    console.log(ccc.value)
+    ddd=false;
+  }
+  if(sa){
+    console.log("macome")
+    ccc=(this.value);
+    sa=false;
+  }
 }
 
 let s;
 function setup() {
 s = createInput(30);
-
-
+frameRate(60);
+s.input(aaa);
 }
-
+let bbb=10;
 function draw() {
+bbb=ccc;
+
+if(ddd){
+  return;
+}else{
+  ddd=true;
+}
+console.log("ciao")
   for(i=0;i<8;i++){
     B[i]=false;
   }
+  pixelDensity(5);
   createCanvas(windth,heigth);
-  s.input(aaa);
   background(120,12,120,100);
   let ru=rule;
   let l=0;
