@@ -50,7 +50,7 @@ console.log("ciao")
   }
   pixelDensity(5);
   createCanvas(windth,heigth);
-  background(120,12,120,100);
+  background(10,70,100,255);
   let ru=rule;
   let l=0;
   while(ru>0){
