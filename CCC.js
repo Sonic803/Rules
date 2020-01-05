@@ -11,7 +11,6 @@ class punto{
   show(){
    if(this.v==1){
      noStroke();
-     let c=random(0,255);
      fill(color(0,0,0,255));
       square(this.x*kk, this.y*kk, this.kk);
    }
